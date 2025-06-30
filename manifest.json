@@ -1,0 +1,16 @@
+{
+  "name": "YouTube Redirector",
+  "short_name": "YT Redirect",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF0000",
+  "description": "PWA yang mengarahkan langsung ke YouTube",
+  "icons": [
+    {
+      "src": "icons/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
