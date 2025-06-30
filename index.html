@@ -16,58 +16,70 @@
     }
 
     body {
-      background: linear-gradient(to right, #8e24aa, #4a148c);
+      background: linear-gradient(135deg, #7b1fa2, #512da8);
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-      color: #fff;
+      justify-content: center;
       padding: 20px;
+      color: #fff;
+    }
+
+    .wrapper {
+      text-align: center;
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
     }
 
     .container {
       display: flex;
-      gap: 20px;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
     }
 
     .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 30px 50px;
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.3s, background 0.3s;
+      background-color: #ffffff20;
+      color: #fff;
+      border-radius: 16px;
+      padding: 20px 40px;
+      text-decoration: none;
       font-size: 1.2rem;
-      backdrop-filter: blur(10px);
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      border: 2px solid transparent;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: #ffffff30;
+      transform: scale(1.05);
+      border-color: #fff;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
       .card {
         width: 100%;
+        padding: 16px 0;
         font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Pilih Portal Tujuan</h1>
-  <div class="container">
-    <a class="card" href="https://mhs.amikom.ac.id">Mahasiswa AMIKOM</a>
-    <a class="card" href="https://waskita.amikom.ac.id">Waskita AMIKOM</a>
+  <div class="wrapper">
+    <h1>Pilih Portal Tujuan</h1>
+    <div class="container">
+      <a class="card" href="https://mhs.amikom.ac.id">Mahasiswa AMIKOM</a>
+      <a class="card" href="https://waskita.amikom.ac.id">Waskita AMIKOM</a>
+    </div>
   </div>
 
   <script>
