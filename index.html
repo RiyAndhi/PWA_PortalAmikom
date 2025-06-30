@@ -29,9 +29,23 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 2.5rem;
+    .title-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
       margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .title-wrap img.logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2rem;
     }
 
     .container {
@@ -70,12 +84,29 @@
         padding: 16px 0;
         font-size: 1rem;
       }
+
+      .title-wrap {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .title-wrap img.logo {
+        width: 40px;
+        height: 40px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <h1>Pilih Portal Tujuan</h1>
+    <div class="title-wrap">
+      <img src="icons/logo.png" alt="Logo" class="logo" />
+      <h1>Pilih Portal Tujuan</h1>
+    </div>
     <div class="container">
       <a class="card" href="https://mhs.amikom.ac.id">Mahasiswa AMIKOM</a>
       <a class="card" href="https://waskita.amikom.ac.id">Waskita AMIKOM</a>
